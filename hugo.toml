@@ -2,7 +2,7 @@
 baseURL = "https://blog.they.consulting"
 theme = "hugo-simple"
 languageCode = "en"                # zh-Hans
-title = "Hugo Simple"
+title = "they consulting blog"
 copyright = "© 2024 they consulting GmbH"
 
 # Generate a nice robots.txt for SEO
@@ -35,7 +35,7 @@ style = "catppuccin-mocha"
 [params]
 title = "they consulting blog"
 description = "Hugo Simple Demo"
-favicon = "images/favicon.png"
+favicon = "images/favicon.ico"
 dateFormat = "2006-01-02"
 hideMadeWithLine = true
 hideRSSLink = false
