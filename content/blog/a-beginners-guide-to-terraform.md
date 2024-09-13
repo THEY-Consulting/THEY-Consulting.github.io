@@ -28,7 +28,7 @@ A very basic deployment process would require me to:
 
 As you can see these are a lot of steps that do not change much between different deployments, at most the code being cloned in step #5 has changed.
 
-Terraform (or any other IaC platform for that matter) let's us encapsulate all these repetitive steps in actual **code** and takes care of running all these steps programatically, so that we can just sit back, relax and see Terraform do the hard work.
+Terraform (or any other IaC platform for that matter) lets us encapsulate all these repetitive steps in actual **code** and takes care of running all these steps programatically, so that we can just sit back, relax and see Terraform do the hard work.
 
 ## How does Terraform work?
 
@@ -115,7 +115,7 @@ From the [terraform plan documentation](https://developer.hashicorp.com/terrafor
 
 In simpler words, Terraform knows which resources, with which options have been previously deployed (this is the `state`).
 
-If no resources have been previously created, Terraform will create all your resources from scratch. But if you have already created some resources within the same Terraform project, Terraform will realize that there are already some resources deployed (there is a **prior state**), so it will check your `*.tf` files in order to see what changes to the deployed resources you have defined in you `*.tf` files.
+If no resources have been previously created, Terraform will create all your resources from scratch. But if you have already created some resources within the same Terraform project, Terraform will realize that there are already some resources deployed (there is a **prior state**), so it will check your `*.tf` files in order to see what changes to the deployed resources you have defined in your `*.tf` files.
 
 For instance, you might want to change the `Tags` in your previously created `EC2 instance`. If that's the case, Terraform will see if it is capable of modifying the `EC2 instance` that is already running, and if not, it will destroy it and create a new one.
 
